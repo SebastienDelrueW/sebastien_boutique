@@ -1,18 +1,17 @@
 /* feuille de style boutique */
 
 body {
-    background-color: rgb(255, 255, 255);
+    background: url(../img/fond.png)
     
 }
 
 #conteneur {
     margin: 0 auto;
     width: 1000px;
-    height: 935px;
+    height: 923px;
     background: rgb(255, 255, 255);
     border: 2px solid rgb(138, 137, 137);
-   
-    box-shadow: 205px rgb(167, 166, 166);
+    
 }
 
 .bandeauHaut {
@@ -36,6 +35,7 @@ img[src="img/logo.png"]{
     float: left;
 }
 
+
 img[src="img/aide.png"]{
     /* width: 200px; */
     margin: auto;
@@ -52,7 +52,6 @@ img[src="img/aide.png"]{
     padding-top: 12px;
     text-align: center;
     color:rgb(250, 250, 250)
-    
 } 
 
 .panier .moncompte hr {
@@ -119,9 +118,8 @@ nav li a {
     padding: 6px;
     margin: 20px;
     text-decoration: none;
-    
-   
 }
+
 /* le lien au survol de la souris */
 nav li a:hover {
     color: rgb(70, 33, 33);
@@ -154,6 +152,7 @@ h2 {
 h3 {
     margin-left: 10px;
     text-align: center;
+     font-weight: bold;
 }
 
 h4 {
@@ -164,10 +163,11 @@ h4 {
 }
 
 h5 {
-    font-size: 30px;
     color: #33ccff;
+    padding-left: 25px;
+    font-size: 18px;
+    padding-top: 5px;
 }
-
 h6 {
     /* padding-top: 30px; */
     color: #ff99cc;
@@ -176,7 +176,7 @@ h6 {
     font-size: 12px;
 }
 
-.section1, .section2, .section3, .section4, .sous_section5, .sous_section6 .sous_section7, .sous_section8  {
+.section1, .section2, .section3, .section4 {
     min-height: 400px;
     width: 100%;
     height: 400px;
@@ -184,28 +184,23 @@ h6 {
     border: solid 2px gray; 
 }
 
-.logo {
-    padding-right: 50px; 
-    margin-left: 15px; 
-}
-
-
 .zone1 {
-    background-image: url(../img/bandeau.png) no-repeat;  
+    background: url(../img/bandeau.png)no-repeat;  
 }
 
 /* ce sont les différentes zones */
 .zone2, .zone3, .zone4, .zone5, .zone6, .zone7 {
     width: 100%;
     float: left; 
-    border: solid 2px rgb(255, 255, 255); 
+    /* border: solid 2px rgb(255, 255, 255);  */
 }
 
 .zone2 {
     width: 24%;
-    height: 200px;
-    min-height: 200px;
+    height: 190px;
+    min-height: 190px;
     background-color :#ffffff;
+    border-right: 3px solid grey;
 }
 
 .carte {
@@ -213,18 +208,20 @@ h6 {
 }
 
 .zone3 {
-    width: 48%;
-    height: 200px;
-    min-height: 200px;
-    background-color: #fffefe; 
+    width: 46%;
+    height: 190px;
+    min-height: 190px;
+    background-color: #fffefe;
+    min-height: 150px; 
+    border-right: 3px solid grey;
 }
 
 .zone4 {
-    width: 26%;
-    height: 200px;
-    min-height: 200px;
+    width: 27%;
+    height: 190px;
+    min-height: 190px;
     background-color: #ffffff;
-    padding-left: 8px;
+    /* padding-left: 8px; */
     padding-top: 10px;
 }
 
@@ -253,22 +250,17 @@ img[src="img/echange.png"]{
     width: 300px;
     min-height: 180px;
     background-color: #ffffff;
-   
     border: 2px solid grey;
-    box-shadow: 3px solid rgb(51, 53, 54);
     border-radius: 8%;
     padding-left: 20px;
     margin-left: 14px;
-
 }
 .zone6 {
     height: 180px;
     width: 300px;
     min-height: 180px;
     background-color: #ffffff;
-
     border: 2px solid grey;
-    box-shadow: 3px rgb(51, 53, 54);
     border-radius: 8%;
     padding-left: 8px;
     margin-left: 14px;
@@ -279,9 +271,7 @@ img[src="img/echange.png"]{
     width: 300px;
     min-height: 180px;
     background-color: #ffffff;
-
     border: 2px solid grey;
-    box-shadow: 3px rgb(51, 53, 54);
     border-radius: 8%;
     padding-left: 2px;
     margin-left: 14px;
@@ -304,21 +294,38 @@ img[src="img/echange.png"]{
     padding-bottom: 85px;
 }
 
-.bloc1 pre { 
+.relative { 
+    position: relative;
+    left: 65px;
+    bottom: 115px;
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid #73AD21; */
     padding: 18px;
     font-size: 16px;
 }
 
-.bloc2 pre {
+.relative2 { 
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid #73AD21; */
     padding: 18px;
     font-size: 16px;
 }
 
-.bloc3 pre {
+.relative3 { 
+    position: relative;
+    left: 80px;
+    bottom: 100px;
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid #73AD21; */
     padding: 18px;
     font-size: 16px;
 }
-
 p {
     padding-top: 70px;
     /* overflow: hidden; */
@@ -332,12 +339,9 @@ p {
 
 .bas a {
     color: #e1dfdf;
-    text-align: center;
     padding-left: 150px;
-    position: -ms-page;
+    border-top: 25px;
 }
-
-
 
 /* évite les flottements à gauche et à droite. */
 .clear {
