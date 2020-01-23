@@ -2,64 +2,344 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    
 }
 
 #conteneur {
     margin: 0 auto;
     width: 1000px;
-    height: 500px;
-    background: white;
-}
-
-.zone1 {
-    background-image: url(../img/bandeau.png) no-repeat;
-}
-
-.zone2, .zone3, .zone4 {
-    height: 110px;
+    height: 935px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(138, 137, 137);
    
-
+    box-shadow: 205px rgb(167, 166, 166);
 }
 
-.zone2 {
-    width: 200px;
-    line-height: 110px;
+.bandeauHaut {
+    background-color: rgb(254, 254, 255);
+    height: 100px;
+    width: 38%;
     float: left;
 }
 
+img[src="img/logo.png"]{
+    /* width: 200px; */
+    /* margin: auto; */
+    padding-left: 1px;
+    display: block; 
+}
 
-.zone3 {
-    width: 600px;
-    line-height: 110px;
+.aide {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 33%;
     float: left;
 }
 
+img[src="img/aide.png"]{
+    /* width: 200px; */
+    margin: auto;
+    display: block;
+}
 
-.zone4 {
-    width: 200px;
-    line-height: 110px;
+.horaires a {
+    font-size: 12px;
+    color:rgb(45, 43, 43);
+}
+
+.panier .moncompte a {
+    font-size: 15px;
+    padding-top: 12px;
+    text-align: center;
+    color:rgb(250, 250, 250)
+    
+} 
+
+.panier .moncompte hr {
+
+    color:rgb(250, 250, 250)
+}
+
+.articles a {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+} 
+
+
+img[src="img/article.png"]{
+    /* width: 200px; */
+    padding-left: 10px; 
+}
+
+.panier {
+    background-color:#33ccff;
+    height: 80px;
+    width: 29%;
     float: left;
+    padding-bottom: 10px;
 }
 
-
-.zone5, .zone6, .zone7 {
-    width: 300px;
-    height: 200px;
-    border: 2px solid grey;
-    box-shadow: 3px rgb(51, 53, 54);
-    border-radius: 10%;
+a {
+    color: #33ccff;
 }
 
-/* rose : ff99cc
+/* rose : ff99cc */
 
-bleu : 33ccff */
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
    font-family: Arial, Helvetica, sans-serif;
 } 
 
+
+/* c'est le menu navigation de la page */
+nav {
+    background-color: #33ccff;
+    height: 110px;
+    width: 100%;
+    color: #33ccff;
+    text-align: center;
+    
+}
+nav ul {
+    /* pour être certain de ne pas avoir de puces dans cette ul  */
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 27px;
+    background-color: #33ccff;
+    padding-top: 10px;
+}
+/* pour pointer les li qui sont dans la balise nav */
+nav, li {
+    display: inline;
+}
+nav li a {
+    color: rgb(159, 153, 153);
+    background-color:#33ccff;
+    text-align: center;
+    padding: 6px;
+    margin: 20px;
+    text-decoration: none;
+    
+   
+}
+/* le lien au survol de la souris */
+nav li a:hover {
+    color: rgb(70, 33, 33);
+    background-color: #33ccff;
+}
+/* le lien clic de la souris, séléctionné */
+nav li a:active {
+    background-color: rgb(84, 42, 34);
+}
+/* le lien visité */
+nav li a:visited {
+    background-color:rgb(231, 233, 238);
+}
+
+h1 {
+    /* padding-top: 30px; */
+    margin-left: 70px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+h2 {
+    color: #33ccff;
+    padding-left: 25px;
+    font-size: 23px;
+    padding-top: 15px;
+}
+
+h3 {
+    margin-left: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: #33ccff;
+    padding-left: 25px;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+h5 {
+    font-size: 30px;
+    color: #33ccff;
+}
+
+h6 {
+    /* padding-top: 30px; */
+    color: #ff99cc;
+    margin-left: 70px;
+    padding-bottom: 50px;
+    font-size: 12px;
+}
+
+.section1, .section2, .section3, .section4, .sous_section5, .sous_section6 .sous_section7, .sous_section8  {
+    min-height: 400px;
+    width: 100%;
+    height: 400px;
+    float: left; 
+    border: solid 2px gray; 
+}
+
+.logo {
+    padding-right: 50px; 
+    margin-left: 15px; 
+}
+
+
+.zone1 {
+    background-image: url(../img/bandeau.png) no-repeat;  
+}
+
+/* ce sont les différentes zones */
+.zone2, .zone3, .zone4, .zone5, .zone6, .zone7 {
+    width: 100%;
+    float: left; 
+    border: solid 2px rgb(255, 255, 255); 
+}
+
+.zone2 {
+    width: 24%;
+    height: 200px;
+    min-height: 200px;
+    background-color :#ffffff;
+}
+
+.carte {
+    padding-left: 25px;
+}
+
+.zone3 {
+    width: 48%;
+    height: 200px;
+    min-height: 200px;
+    background-color: #fffefe; 
+}
+
+.zone4 {
+    width: 26%;
+    height: 200px;
+    min-height: 200px;
+    background-color: #ffffff;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+img[src="img/camion.png"]{
+    /* width: 200px; */
+    padding-left: 25px; 
+}
+
+img[src="img/echange.png"]{
+    /* width: 200px; */
+    padding-left: 25px; 
+}
+
+.livraison a {
+    color: rgb(45, 43, 43);
+    padding-left: 70px;
+}
+
+.produits a {
+    color: rgb(45, 43, 43);
+    padding-left: 70px; 
+}
+
+.zone5 {
+    height: 180px;
+    width: 300px;
+    min-height: 180px;
+    background-color: #ffffff;
+   
+    border: 2px solid grey;
+    box-shadow: 3px solid rgb(51, 53, 54);
+    border-radius: 8%;
+    padding-left: 20px;
+    margin-left: 14px;
+
+}
+.zone6 {
+    height: 180px;
+    width: 300px;
+    min-height: 180px;
+    background-color: #ffffff;
+
+    border: 2px solid grey;
+    box-shadow: 3px rgb(51, 53, 54);
+    border-radius: 8%;
+    padding-left: 8px;
+    margin-left: 14px;
+}
+
+.zone7 {
+    height: 180px;
+    width: 300px;
+    min-height: 180px;
+    background-color: #ffffff;
+
+    border: 2px solid grey;
+    box-shadow: 3px rgb(51, 53, 54);
+    border-radius: 8%;
+    padding-left: 2px;
+    margin-left: 14px;
+}
+
+.reglement {
+    padding: 10px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+}
+
+.bienvenue {
+    padding: 10px;
+    padding-bottom: 85px;
+    padding-left: 25px;
+}
+
+.sevices {
+    padding: 10px;
+    padding-bottom: 85px;
+}
+
+.bloc1 pre { 
+    padding: 18px;
+    font-size: 16px;
+}
+
+.bloc2 pre {
+    padding: 18px;
+    font-size: 16px;
+}
+
+.bloc3 pre {
+    padding: 18px;
+    font-size: 16px;
+}
+
+p {
+    padding-top: 70px;
+    /* overflow: hidden; */
+}
+
 .bas {
     width: 1000px;
-    height: 100px;
-    background-color: steelblue;
+    height: 50px;
+    background-color: #33ccff;
+}
+
+.bas a {
+    color: #e1dfdf;
+    text-align: center;
+    padding-left: 150px;
+    position: -ms-page;
+}
+
+
+
+/* évite les flottements à gauche et à droite. */
+.clear {
+    clear: both;
 }
